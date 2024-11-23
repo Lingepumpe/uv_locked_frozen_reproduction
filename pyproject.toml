@@ -1,0 +1,18 @@
+[project]
+dynamic = ["version"]
+name = "example"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+]
+requires-python = ">=3.12.5"
+dependencies = []
+
+[build-system]
+requires = ["maturin>=1.5,<2.0"]
+build-backend = "maturin"
+
+[tool.maturin]
+features = ["pyo3/extension-module"]
+module-name = "example._rust"
